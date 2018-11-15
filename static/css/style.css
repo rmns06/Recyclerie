@@ -1,0 +1,80 @@
+body {
+    width: 1440px;
+    /* background-color: red; */
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Josefin Slab', serif;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    max-width: 602px;
+    max-height: 462px;
+}
+
+main {
+    width: 50%;
+    margin: -30% auto 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.50);
+    height: 30vh;
+}
+
+main h1 {
+    padding: 5%;
+    font-size: 42px;
+}
+
+main p {
+    font-size: 20px;
+}
+
+.rainbow-button {
+    width: 255px;
+    height: 65px;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius: 5px;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Rozha One, serif;
+    border-radius: 46.5px;
+}
+
+.rainbow-button:after {
+    content: attr(alt);
+    width: 250px;
+    height: 60px;
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 46.5px;
+}
+
+.rainbow-button:hover {
+    animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
